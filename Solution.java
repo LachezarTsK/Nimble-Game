@@ -13,16 +13,16 @@ public class Solution {
 				int element = scanner.nextInt();
 				/**
 				 * If the number of chips at a pile is even, a removal from the pile by one
-				 * player can be negated by the other through making the same removal 
-         * (placing the removed chip on the same pile as the other player). 
-         * Therefore, if the number of elements in a pile is even, it has no influence 
-         * on the results.
+				 * player can be negated by the other through making the same removal (placing
+				 * the removed chip on the same pile as the other player). Therefore, if the
+				 * number of elements in a pile is even, it has no influence on the results.
 				 * 
-				 * Only piles with an odd number of chips have to be taken into account. 
-         * Thus, the problem can be looked upon as the standard Nim Game (at each turn,
+				 * Only piles with an odd number of chips have to be taken into account. Thus,
+				 * the problem can be looked upon as the standard Nim Game (at each turn,
 				 * removing one or more elements from a pile), where the number of piles is
 				 * equal to the piles with an odd number of chips, and the actual number of
-				 * chips per pile is equal to the number of the preceding piles.
+				 * chips per pile is equal to the number piles preceding a pile with an odd
+				 * number of chips.
 				 * 
 				 * In this way, XOR operations for the standard Nim Game can be applied.
 				 */
